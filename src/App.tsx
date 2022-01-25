@@ -15,6 +15,7 @@ function App() {
       <header className='App-header'>
         <img className='App-logo' src='https://door.codeworks.me/images/logo.svg' alt='' />
         <h2>What&apos;s up Codeworks?</h2>
+        <p>😎</p>
       </header>
     </div>
   );
