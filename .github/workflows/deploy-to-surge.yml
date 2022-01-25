@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn
+      - name: Build project
+        run: yarn build
       - name: Deploy to surge
         uses: dswistowski/surge-sh-action@v1
         with:
