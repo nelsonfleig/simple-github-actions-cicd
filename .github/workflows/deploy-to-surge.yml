@@ -18,6 +18,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'cicd-codeworks.surge.sh'
-          project: './build'
+          project: './dist'
           login: ${{ secrets.SURGE_USER }}
           token: ${{ secrets.SURGE_TOKEN }}
