@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 // ESlint error
-// const unused = 'hi';
+const unused = 'hi';
 
 // Type error
 // const num = 5;
