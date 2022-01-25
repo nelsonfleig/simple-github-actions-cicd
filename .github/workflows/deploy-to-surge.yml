@@ -1,0 +1,19 @@
+name: Code quality
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Deploy to surge
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'cicd-codeworks.surge.sh'
+          project: './build'
+          login: ${{ secrets.SURGE_USER }}
+          token: ${{ secrets.SURGE_TOKEN }}

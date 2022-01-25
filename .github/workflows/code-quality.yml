@@ -17,3 +17,6 @@ jobs:
 
       - name: Run ESLint
         run: yarn check-lint
+
+      - name: Run Tests
+        run: yarn test --coverage
