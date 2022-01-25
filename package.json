@@ -7,7 +7,8 @@
     "preview": "vite preview",
     "check-types": "tsc --pretty --noEmit",
     "check-lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "test": "yarn run jest -env=jsdom"
+    "test": "yarn run jest -env=jsdom",
+    "commit": "cz"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -27,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.4.6",
     "babel-preset-react-app": "^10.0.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.7.0",
     "eslint-plugin-react": "^7.28.0",
     "identity-obj-proxy": "^3.0.0",
@@ -78,6 +80,11 @@
           "react-app"
         ]
       }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
