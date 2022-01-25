@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders a heading', () => {
     render(<App />);
 
-    const heading = screen.getByText('Hello Vite + React!');
+    const heading = screen.getByText("What's up Codeworks?");
 
     expect(heading).toBeInTheDocument();
   });
