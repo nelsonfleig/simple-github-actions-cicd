@@ -25,6 +25,10 @@
   color: white;
 }
 
+.App-header p {
+  font-size: 50px;
+}
+
 .App-link {
   color: #61dafb;
 }
