@@ -14,4 +14,4 @@ This repo is a demonstration of how to use Github Actions to create a simple Con
 - React (Vite)
 - Jest / React Testing Library
 - Commitizen
-- Airbnb ESLint
+- ESLint
